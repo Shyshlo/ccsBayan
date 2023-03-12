@@ -1,43 +1,49 @@
 body {
     padding: 0;
     font-family: 'Kaushan Script', cursive;
+    font-size: 62.5%;
 }
 .wrapper {
     max-width: 70%;
     margin: 0 auto;
     background-color: rgb(246, 238, 226);
-    padding: 70px;
+    padding: 3rem;
 
 }
 .heading {
     display: flex;
     justify-content: start;
+
+}
+h1 {
+    font-size: 3rem;
 }
 .devider {
     border: none;
-    border-bottom: 1px solid rgba(225,228,237, 0.8);
+    border-bottom: 0.1rem solid rgba(225,228,237, 0.8);
 }
 
 /*first mem*/
 label {
     cursor: pointer;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 0.1rem;
 }
 .block-img {
-    margin-top: 20px;
+    margin-top: 0.2rem;
     transition: .5s;
     text-align: center;
+    cursor: pointer;
 
 }
 #check_label:checked ~ .block-img {
-    height: 0px;
+    height: 0rem;
     opacity: 0;
 }
 
 
 #check_label:hover ~ .block-img {
-    height: 0px;
+    height: 0rem;
     opacity: 0;
     
 }
@@ -46,8 +52,12 @@ label {
     display: none;
 }
 
-
-
+.accordion_block1:hover .plus-rotate {
+    transform: rotate(45deg); 
+}
+.active {
+    font-size: 0.1rem;
+}
 
 /* other mems*/
 .accordion-item__input, .accordion-item__input2, .accordion-item__input3 {
@@ -62,28 +72,30 @@ label {
 
 .accordion-item__text{
  
-    font-size: 25px;
+    font-size: 1.5rem;
     cursor: pointer;
 
 }
-
 
 .accordion-item__text:hover{
     cursor: pointer;
   
 }
 .accordion-item__content, .accordion-item__content2, .accordion-item__content3 {
-    padding: 10px;
+    padding: 0.1rem;
     border-top: none; 
     display: none;  
     text-align: center;
    
 }
-.plus {
-    font-size: 20px;
+.plus-rotate {
+    font-size: 30px;     
 }
 
 
+.accordion-item:hover .plus-rotate {
+    transform: rotate(45deg); 
+}
 
 
 .accordion-item__input:checked ~ .accordion-item__content {
