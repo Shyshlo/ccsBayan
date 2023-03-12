@@ -13,7 +13,7 @@ body {
 .heading {
     display: flex;
     justify-content: start;
-
+    
 }
 h1 {
     font-size: 3rem;
@@ -159,6 +159,9 @@ label {
     .accordion__img {
         height: 120px;
         width: 120px;
+    }
+    h1 {
+        font-size: 20px;
     }
 }
 @media all and (max-width:1920px) {
