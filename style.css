@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+}
+.wrapper {
+    max-width: 30%;
+    margin: 0 auto;
+    background-color: rgb(246, 238, 226);
+    padding: 40px;
+
+}
+.heading {
+    display: flex;
+    justify-content: start;
+}
+.devider {
+    border: none;
+    border-bottom: 1px solid rgba(225,228,237, 0.8);
+}
+.center {
+    dis
+}
+/*first mem*/
+label {
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px;
+}
+.block-img {
+    margin-top: 20px;
+    transition: .5s;
+    text-align: center;
+
+}
+#check_label:checked ~ .block-img {
+    height: 0px;
+    opacity: 0;
+}
+
+
+#check_label:hover ~ .block-img {
+    height: 0px;
+    opacity: 0;
+    
+}
+
+#check_label {
+    display: none;
+}
+
+
+
+
+/* other mems*/
+.accordion-item__input, .accordion-item__input2, .accordion-item__input3 {
+    opacity: 0;
+
+}
+.accordion-item__text{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.accordion-item__text:hover{
+    cursor: pointer;
+}
+.accordion-item__content, .accordion-item__content2, .accordion-item__content3 {
+    padding: 10px;
+    border-top: none; 
+    display: none;  
+    text-align: center;
+   
+}
+
+
+
+
+
+
+.accordion-item__input:checked ~ .accordion-item__content {
+    display: block;
+}
+.accordion-item__input2:checked ~ .accordion-item__content2 {
+    display: block;
+}
+.accordion-item__input3:checked ~ .accordion-item__content3 {
+    display: block;
+}
+
+
+
+
+.accordion-item__input:hover ~ .accordion-item__content {
+    display: block;
+}
+.accordion-item__input2:hover ~ .accordion-item__content2 {
+    display: block;
+}
+.accordion-item__input3:hover ~ .accordion-item__content3 {
+    display: block;
+}
+
+
+
+
